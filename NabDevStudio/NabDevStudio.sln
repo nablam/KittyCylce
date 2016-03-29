@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NabDevStudio.CSharp.Plugins", "NabDevStudio.CSharp.Plugins.csproj", "{B1C13DA6-F6E4-B420-715A-279F3BFB6979}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NabDevStudio.CSharp", "NabDevStudio.CSharp.csproj", "{1B290F25-1195-5DA9-661D-B6D68314C04E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NabDevStudio.CSharp.Editor", "NabDevStudio.CSharp.Editor.csproj", "{9959886F-505E-EBE8-2883-A6941CF31898}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{B1C13DA6-F6E4-B420-715A-279F3BFB6979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1C13DA6-F6E4-B420-715A-279F3BFB6979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1C13DA6-F6E4-B420-715A-279F3BFB6979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B290F25-1195-5DA9-661D-B6D68314C04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B290F25-1195-5DA9-661D-B6D68314C04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B290F25-1195-5DA9-661D-B6D68314C04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B290F25-1195-5DA9-661D-B6D68314C04E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9959886F-505E-EBE8-2883-A6941CF31898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9959886F-505E-EBE8-2883-A6941CF31898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9959886F-505E-EBE8-2883-A6941CF31898}.Release|Any CPU.ActiveCfg = Release|Any CPU
