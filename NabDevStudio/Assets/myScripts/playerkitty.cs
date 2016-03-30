@@ -14,6 +14,7 @@ public class playerkitty : MonoBehaviour {
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
 
+    private GameObject foundBoost;
 
     
     public GameObject jumpBoostGO;
@@ -21,16 +22,26 @@ public class playerkitty : MonoBehaviour {
     void Start () {
         controller = GetComponent<CharacterController>();
         mybody = GetComponent<Rigidbody>();
-	}
-	
- 
-	void Update () {
+        foundBoost = GameObject.Find("JumpPower");
+    }
+
+    public Vector3 FrameVelocity { get; set; }
+    public Vector3 PrevPosition { get; set; }
+    void Update () {
+        Vector3 currFrameVelocity = (transform.position - PrevPosition) / Time.deltaTime;
+        FrameVelocity = Vector3.Lerp(FrameVelocity, currFrameVelocity, 0.8f);
+        PrevPosition = transform.position;
+
+      //  Debug.Log(FrameVelocity);
+       // if (FrameVelocity.y < -10) {Debug.Log("Falling"); }
+       // if (FrameVelocity.y > -9 && FrameVelocity.y < 10) { Debug.Log("nothing"); }
+       // if (FrameVelocity.y > 10) Debug.Log("JUMPING");
 
         if (this.transform.position.x < -100)
         {        
             Destroy(this.gameObject);
         }
-
+      
 
 
         if (controller.isGrounded)
@@ -47,7 +58,7 @@ public class playerkitty : MonoBehaviour {
                 moveDirection.y = dynamicJumpSpeed;
                 dynamicJumpSpeed = 10f;
             }
-            jumpBoostGO.transform.localScale = new Vector3(25, dynamicJumpSpeed, 10);
+            foundBoost.transform.localScale = new Vector3(25, dynamicJumpSpeed, 10);
         }
         moveDirection.y -= gravity * Time.deltaTime* 1.5f;
         if (controller.enabled)

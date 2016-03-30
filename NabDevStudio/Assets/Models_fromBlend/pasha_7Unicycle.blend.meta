@@ -123,11 +123,823 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 19
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body1_001
+        weight: 1
+      - path: Armature/body1_001/body1
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: Armature/body1_001/nothing
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: cycling
+      takeName: cycling
+      firstFrame: -2
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body1_001
+        weight: 1
+      - path: Armature/body1_001/body1
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: Armature/body1_001/nothing
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fall
+      takeName: fall
+      firstFrame: -2
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body1_001
+        weight: 1
+      - path: Armature/body1_001/body1
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: Armature/body1_001/nothing
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fallingOnly
+      takeName: fallingOnly
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body1_001
+        weight: 1
+      - path: Armature/body1_001/body1
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: Armature/body1_001/nothing
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump1
+      takeName: jump1
+      firstFrame: -2
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body1_001
+        weight: 1
+      - path: Armature/body1_001/body1
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: Armature/body1_001/nothing
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump2
+      takeName: jump2
+      firstFrame: -2
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body1_001
+        weight: 1
+      - path: Armature/body1_001/body1
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: Armature/body1_001/nothing
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PoseLib
+      takeName: PoseLib
+      firstFrame: -1
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body1_001
+        weight: 1
+      - path: Armature/body1_001/body1
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: Armature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: Armature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: Armature/body1_001/nothing
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: Armature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 20
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class spawnwalls : MonoBehaviour {
-    private float InstantiationTimer = 5f;
+    private float InstantiationTimer = 1f;
 
     GameObject go;
 
@@ -52,7 +52,7 @@ public class spawnwalls : MonoBehaviour {
                     break;
             }
 
-            float newtimer = Random.Range(0.1f, 10.0f);
+            float newtimer = Random.Range(0.1f, 1.0f);
             
             InstantiationTimer = newtimer;
         }
