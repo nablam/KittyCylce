@@ -5,13 +5,18 @@ public class spawnwalls : MonoBehaviour {
     private float InstantiationTimer = 5f;
 
     GameObject go;
-	// Use this for initialization
-	void Start () {
-       
+
+    uimanager uiscript;
+    GameObject UiGO;
+
+    void Start()
+    {
+        UiGO = GameObject.Find("UIManager");
+        uiscript = UiGO.GetComponent<uimanager>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         CreatePrefab();
     }
 
@@ -22,9 +27,9 @@ public class spawnwalls : MonoBehaviour {
         InstantiationTimer -= Time.deltaTime;
         if (InstantiationTimer <= 0)
         {
-
+           // uiscript.updateScore();
             int rand = Random.Range(0, 5);
-            Debug.Log(rand);
+          //  Debug.Log(rand);
             switch (rand)
             {
                 case 0:
@@ -40,15 +45,16 @@ public class spawnwalls : MonoBehaviour {
                     go = Instantiate(Resources.Load("walls/wall200")) as GameObject;
                     break;
                 case 4:
-                    go = Instantiate(Resources.Load("walls/wall250")) as GameObject;
+                    go = Instantiate(Resources.Load("walls/wall150")) as GameObject;
                     break;
                 default:
                     go = Instantiate(Resources.Load("walls/wall50")) as GameObject;
                     break;
             }
 
+            float newtimer = Random.Range(0.1f, 10.0f);
             
-            InstantiationTimer = 5f;
+            InstantiationTimer = newtimer;
         }
     }
 }

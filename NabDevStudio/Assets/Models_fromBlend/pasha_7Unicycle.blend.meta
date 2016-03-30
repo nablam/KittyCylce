@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: af0f49ff77888a344adbd572170a83c9
+timeCreated: 1459342842
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: arm1_L
+    100002: arm1_R
+    100004: arm2_L
+    100006: arm2_R
+    100008: arm3_L
+    100010: arm3_R
+    100012: arm4_L
+    100014: arm4_R
+    100016: arm5_L
+    100018: arm5_R
+    100020: Armature
+    100022: backLeg1_L
+    100024: backLeg1_R
+    100026: backLeg2_L
+    100028: backLeg2_R
+    100030: backLeg3_L
+    100032: backLeg3_R
+    100034: backLeg4_L
+    100036: backLeg4_R
+    100038: backLeg5_L
+    100040: backLeg5_R
+    100042: body1
+    100044: body1_001
+    100046: Bone_004_L
+    100048: Bone_004_R
+    100050: Bone_005
+    100052: Cube
+    100054: cycle
+    100056: dorsal1
+    100058: dorsal2
+    100060: dorsal3
+    100062: EYElid_L
+    100064: EYElid_R
+    100066: HEAD
+    100068: NECK
+    100070: nothing
+    100072: nothing_001
+    100074: nothing_002
+    100076: //RootNode
+    100078: tail1
+    100080: tail2
+    100082: tail3
+    100084: tail4
+    100086: tail5
+    400000: arm1_L
+    400002: arm1_R
+    400004: arm2_L
+    400006: arm2_R
+    400008: arm3_L
+    400010: arm3_R
+    400012: arm4_L
+    400014: arm4_R
+    400016: arm5_L
+    400018: arm5_R
+    400020: Armature
+    400022: backLeg1_L
+    400024: backLeg1_R
+    400026: backLeg2_L
+    400028: backLeg2_R
+    400030: backLeg3_L
+    400032: backLeg3_R
+    400034: backLeg4_L
+    400036: backLeg4_R
+    400038: backLeg5_L
+    400040: backLeg5_R
+    400042: body1
+    400044: body1_001
+    400046: Bone_004_L
+    400048: Bone_004_R
+    400050: Bone_005
+    400052: Cube
+    400054: cycle
+    400056: dorsal1
+    400058: dorsal2
+    400060: dorsal3
+    400062: EYElid_L
+    400064: EYElid_R
+    400066: HEAD
+    400068: NECK
+    400070: nothing
+    400072: nothing_001
+    400074: nothing_002
+    400076: //RootNode
+    400078: tail1
+    400080: tail2
+    400082: tail3
+    400084: tail4
+    400086: tail5
+    4300000: Cube
+    7400000: Default Take
+    7400002: cycling
+    7400004: PoseLib
+    7400006: jump1
+    7400008: jump2
+    7400010: fall
+    7400012: fallingOnly
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

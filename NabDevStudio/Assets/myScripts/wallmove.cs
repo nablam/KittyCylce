@@ -3,16 +3,26 @@ using System.Collections;
 
 public class wallmove : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    GameObject go;
+
+    uimanager uiscript;
+    GameObject UiGO;
+
+    void Start()
+    {
+        UiGO = GameObject.Find("UIManager");
+        uiscript = UiGO.GetComponent<uimanager>();
+    }
+
+ 
+    void Update () {
         transform.Translate(Vector3.left  * Time.deltaTime * 200, Space.World);
 
-        if (this.transform.position.x < -100)
+        if (this.transform.position.x < -100) {
+            uiscript.updateScore();
             Destroy(this.gameObject);
+        }
+         
     }
 }
