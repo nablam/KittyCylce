@@ -4,23 +4,10 @@ using UnityStandardAssets.CrossPlatformInput;
 public class playerKittyForce : MonoBehaviour {
 
     private Rigidbody mybody;
-    // public float speed = 6.0F;
-    private float jumpPowerBuildCoefficient = 8.0f;
-    private float maxJumpSpeed = 500.0F;
-    //private float jumpSpeed = 300.0F;
-    private float dynamicJumpSpeed = 10f;
-    private float gravity = 300.0F;
-    private Vector3 moveDirection = Vector3.zero;
-    private CharacterController controller;
-
     private GameObject foundBoost;
-
-
-    public GameObject jumpBoostGO;
     private float jumpPressure;
     private float minJump;
     private float maxJumpPressure;
-
     private bool onGround;
 
     void Start()
@@ -38,11 +25,7 @@ public class playerKittyForce : MonoBehaviour {
     public Vector3 PrevPosition { get; set; }
     void Update()
     { 
-        if (this.transform.position.x < -100)
-        {
-            Destroy(this.gameObject);
-        }
-
+   
 
         if (onGround) {
             if (CrossPlatformInputManager.GetButton("Jump"))
@@ -61,46 +44,37 @@ public class playerKittyForce : MonoBehaviour {
             {
                 if (jumpPressure > 0) {
                     jumpPressure = jumpPressure + minJump;
-                    mybody.velocity = new Vector3(jumpPressure/10f, jumpPressure, 0);
+                    mybody.velocity = new Vector3(0, jumpPressure, 0);
                     jumpPressure = 0;
                     onGround = false;
-
                 }
             }
-        }
- 
-          // 
-        
-       //     if (CrossPlatformInputManager.GetButtonUp("Jump"))
-           
- 
+            foundBoost.transform.localScale = new Vector3(0.5f, jumpPressure, 0.5f);
+        } 
     }
-
-    void OnTriggerEnter(Collider theCollision)
+    void OnCollisionEnter(Collision theCollision)
     {
 
-        if (theCollision.tag == "groundTag") {
+        if ( theCollision.gameObject.CompareTag("groundTag")) {
             onGround = true;
-            print("on ground");
+        
         }
 
+        
+    }
 
-
-            if (theCollision.tag == "wallTag")
-        {
-            // Debug.Log("hit a wall");
-
-            // CharacterController cc = GetComponent<CharacterController>();
-          //  controller.enabled = false;
-            //Rigidbody gameObjectsRigidBody = GetComponent<Rigidbody>(); // Add the rigidbody.
-            //gameObjectsRigidBody.mass = 5;
-            mybody.mass = 1;
-            mybody.AddTorque(new Vector3(50, 50, 50));
-            mybody.AddForce(new Vector3(-1000, 1000, 0));
-
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "wallTag")
+        {              
+                mybody.useGravity = false;
+                mybody.AddTorque(new Vector3(50, 50, -500));
+                mybody.velocity = new Vector3(-10, 10, 0);
+            
         }
+    }
 
-
-
+    public Vector3 myposition() {
+        return this.transform.position;
     }
 }

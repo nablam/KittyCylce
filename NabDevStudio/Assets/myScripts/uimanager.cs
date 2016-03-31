@@ -4,21 +4,22 @@ using UnityEngine.UI;
 
 public class uimanager : MonoBehaviour {
     public Text scoretext;
-    private int score;
-
-	// Use this for initialization
-	void Start () {
-        score = 0;
-        scoretext.text = "score: " + score.ToString();
+    public Text livesText;
+ 
+    void Start () {
+        scoretext.text = "Score: 0";
+        livesText.text = "Lives: 3";
     }
 
-    public void updateScore() {
-        score++;
-        scoretext.text = "score: " + score.ToString();
+    public void updateScore(int score) {
+      
+        scoretext.text = "Score: " + score.ToString();
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    public void updateLives(int lives)
+    {
+        livesText.text = "Lives: " + lives.ToString();
+    }
+
+  
 }

@@ -37,10 +37,6 @@ public class playerkitty : MonoBehaviour {
        // if (FrameVelocity.y > -9 && FrameVelocity.y < 10) { Debug.Log("nothing"); }
        // if (FrameVelocity.y > 10) Debug.Log("JUMPING");
 
-        if (this.transform.position.x < -100)
-        {        
-            Destroy(this.gameObject);
-        }
       
 
 

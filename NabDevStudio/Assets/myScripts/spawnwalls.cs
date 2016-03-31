@@ -17,44 +17,34 @@ public class spawnwalls : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        CreatePrefab();
+       // CreatePrefab();
     }
 
 
 
-    void CreatePrefab()
+   public void CreatePrefab(int level)
     {
         InstantiationTimer -= Time.deltaTime;
         if (InstantiationTimer <= 0)
         {
            // uiscript.updateScore();
-            int rand = Random.Range(0, 5);
-          //  Debug.Log(rand);
-            switch (rand)
-            {
-                case 0:
-                    go = Instantiate(Resources.Load("walls/wall50")) as GameObject;
-                    break;
-                case 1:
-                    go = Instantiate(Resources.Load("walls/wall100")) as GameObject;
-                    break;
-                case 2:
-                    go = Instantiate(Resources.Load("walls/wall150")) as GameObject;
-                    break;
-                case 3:
-                    go = Instantiate(Resources.Load("walls/wall200")) as GameObject;
-                    break;
-                case 4:
-                    go = Instantiate(Resources.Load("walls/wall150")) as GameObject;
-                    break;
-                default:
-                    go = Instantiate(Resources.Load("walls/wall50")) as GameObject;
-                    break;
-            }
+            int rand = Random.Range(1, 7);
 
-            float newtimer = Random.Range(0.1f, 1.0f);
+          Instantiate(makeWallwithspeed(rand, level));
+      
+          float newtimer = Random.Range(1, 5);
             
             InstantiationTimer = newtimer;
         }
     }
+
+    GameObject makeWallwithspeed(int wallnumber, int level) {
+        string path = "walls/wall" + wallnumber.ToString();
+
+        go =  Resources.Load(path) as GameObject;
+        go.GetComponent<wallmove>().setSpeed(level);
+        return go;
+    }
+
+
 }

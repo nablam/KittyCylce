@@ -6,21 +6,24 @@ public class wallmove : MonoBehaviour {
 
     GameObject go;
 
-    uimanager uiscript;
-    GameObject UiGO;
+    
+
+    private int wallspeed = 5;
+
+    public void setSpeed(int x) {
+        wallspeed = x;
+    }
 
     void Start()
     {
-        UiGO = GameObject.Find("UIManager");
-        uiscript = UiGO.GetComponent<uimanager>();
+
     }
 
  
     void Update () {
-        transform.Translate(Vector3.left  * Time.deltaTime * 200, Space.World);
+        transform.Translate(Vector3.left  * Time.deltaTime * wallspeed, Space.World);
 
-        if (this.transform.position.x < -100) {
-            uiscript.updateScore();
+        if (this.transform.position.x < -20) {           
             Destroy(this.gameObject);
         }
          
