@@ -6,7 +6,7 @@ public class wallmove : MonoBehaviour {
 
     GameObject go;
 
-    
+
 
     public int wallspeed=0;
 
@@ -22,8 +22,9 @@ public class wallmove : MonoBehaviour {
  
     void Update () {
         transform.Translate(Vector3.left  * Time.deltaTime * wallspeed, Space.World);
-
-        if (this.transform.position.x < -20) {           
+       
+        if (this.transform.position.x < -12) {
+            GameManager.mangerScore++;
             Destroy(this.gameObject);
         }
          

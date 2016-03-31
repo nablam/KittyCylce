@@ -3,27 +3,50 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-    private int level;
-    private int wallspeed = 5;
+    public int level;
+    public static int managerLives=3;
+    public static int mangerScore = 0;
+
     public GameObject theWallSpawner;
 
+    GameObject UiGO;
+    uimanager uiscript;
+
+    public static GameObject player = null;
+    public static GameObject localplayer;
 
     void Start()
     {
         level = 1;
+  
         theWallSpawner = GameObject.Find("WallSpawnr");
+        UiGO = GameObject.Find("UIManager");
+        uiscript = UiGO.GetComponent<uimanager>();
+
+
+        string path = "Pasha/PashaPrefab";
+        player = Resources.Load(path) as GameObject;
+
+        localplayer = Instantiate(player);
     }
+
+
     void Update()
     {
+        level = (mangerScore / 10) + 1;
         theWallSpawner.GetComponent<spawnwalls>().CreatePrefab(level);
+        uiscript.updateScore(mangerScore);
+        uiscript.updateLives(managerLives);
+        
     }
 
+    public static void managerMakePlayer() {
+        string path = "Pasha/PashaPrefab";
+        player = Resources.Load(path) as GameObject;
 
-
-
-
-
-
+        localplayer = Instantiate(player);
+    }
+   
 
     #region old
 
@@ -105,16 +128,7 @@ public class GameManager : MonoBehaviour {
         //decrementlivesOn = true;
     }
 
-    bool playerIsOutOfBound(Vector3 pos) {
-
-        if (pos.y > 12 || pos.y < -5) return true;
-        else
-        if (pos.x > 18 || pos.x < -15) return true;
-        else
-        if (pos.z > 2 || pos.z < -4) return true;
-        else
-        return false;
-    }
+  
   */
     #endregion old
 }

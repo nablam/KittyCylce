@@ -26,8 +26,14 @@ public class playerKittyForce : MonoBehaviour {
     }
     void FixedUpdate()
     {
+        if (playerIsOutOfBound()) {
+            GameManager.managerLives--;
+            Destroy(this.gameObject);
+            GameManager.managerMakePlayer();
+        }
+
         velo3 = mybody.velocity;
-        //  print(velo3);
+      
         if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("pashaApex"))
         {
             gameObject.GetComponent<CapsuleCollider>().height = 1.5f;
@@ -36,7 +42,7 @@ public class playerKittyForce : MonoBehaviour {
             gameObject.GetComponent<CapsuleCollider>().height = 3.4f;
         anim.SetFloat("apexparam", velo3.y);
 
-    //    anim.SetFloat("heighttocycle", transform.position.y);
+ 
 
         if (onGround)
         {
@@ -69,6 +75,18 @@ public class playerKittyForce : MonoBehaviour {
         }
     }
 
+
+    bool playerIsOutOfBound( )
+    {
+
+        if (transform.position.y > 12 || transform.position.y < -5) return true;
+        else
+        if (transform.position.x > 18 || transform.position.x < -15) return true;
+        else
+        if (transform.position.z > 2 || transform.position.z < -4) return true;
+        else
+            return false;
+    }
 
     void OnCollisionEnter(Collision theCollision)
     {
