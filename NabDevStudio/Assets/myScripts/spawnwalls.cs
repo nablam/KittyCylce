@@ -28,11 +28,11 @@ public class spawnwalls : MonoBehaviour {
         if (InstantiationTimer <= 0)
         {
            // uiscript.updateScore();
-            int rand = Random.Range(1, 7);
+            int randwall = Random.Range(1, 7);
 
-          Instantiate(makeWallwithspeed(rand, level));
+          Instantiate(makeWallwithspeed(randwall, level));
       
-          float newtimer = Random.Range(1, 5);
+          float newtimer = Random.Range(6, 12);
             
             InstantiationTimer = newtimer;
         }
@@ -42,7 +42,7 @@ public class spawnwalls : MonoBehaviour {
         string path = "walls/wall" + wallnumber.ToString();
 
         go =  Resources.Load(path) as GameObject;
-        go.GetComponent<wallmove>().setSpeed(level);
+        go.GetComponent<wallmove>().setSpeed(level+2);
         return go;
     }
 

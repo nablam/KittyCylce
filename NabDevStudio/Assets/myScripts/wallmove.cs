@@ -8,12 +8,12 @@ public class wallmove : MonoBehaviour {
 
     
 
-    private int wallspeed = 5;
+    public int wallspeed=0;
 
     public void setSpeed(int x) {
         wallspeed = x;
     }
-
+ 
     void Start()
     {
 

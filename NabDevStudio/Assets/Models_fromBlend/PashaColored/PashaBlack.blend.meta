@@ -49,6 +49,9 @@ ModelImporter:
     100082: tail3
     100084: tail4
     100086: tail5
+    100088: PashaArmature
+    100090: PASHACUBEnoanim
+    100092: cubePasha
     400000: arm1_L
     400002: arm1_R
     400004: arm2_L
@@ -93,11 +96,23 @@ ModelImporter:
     400082: tail3
     400084: tail4
     400086: tail5
+    400088: PashaArmature
+    400090: PASHACUBEnoanim
+    400092: cubePasha
     4300000: PASHACUBE
+    4300002: PASHACUBEnoanim
+    4300004: cubePasha
     7400000: Default Take
     7400002: PoseLib
+    7400004: ArmatureAction
+    7400006: pashaCycle
+    7400008: pashaJumpup
+    7400010: pashaApex
+    7400012: pashafall
     9500000: //RootNode
     13700000: PASHACUBE
+    13700002: PASHACUBEnoanim
+    13700004: cubePasha
   materials:
     importMaterials: 1
     materialName: 0
@@ -118,7 +133,703 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cubePasha
+        weight: 1
+      - path: PashaArmature
+        weight: 1
+      - path: PashaArmature/body1_001
+        weight: 1
+      - path: PashaArmature/body1_001/body1
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: PashaArmature/body1_001/nothing
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: pashaApex
+      takeName: pashaApex
+      firstFrame: -1
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cubePasha
+        weight: 1
+      - path: PashaArmature
+        weight: 1
+      - path: PashaArmature/body1_001
+        weight: 1
+      - path: PashaArmature/body1_001/body1
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: PashaArmature/body1_001/nothing
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: pashaCycle
+      takeName: pashaCycle
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cubePasha
+        weight: 1
+      - path: PashaArmature
+        weight: 1
+      - path: PashaArmature/body1_001
+        weight: 1
+      - path: PashaArmature/body1_001/body1
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: PashaArmature/body1_001/nothing
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: pashafall
+      takeName: pashafall
+      firstFrame: -1
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cubePasha
+        weight: 1
+      - path: PashaArmature
+        weight: 1
+      - path: PashaArmature/body1_001
+        weight: 1
+      - path: PashaArmature/body1_001/body1
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: PashaArmature/body1_001/nothing
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: pashaJumpup
+      takeName: pashaJumpup
+      firstFrame: -1
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cubePasha
+        weight: 1
+      - path: PashaArmature
+        weight: 1
+      - path: PashaArmature/body1_001
+        weight: 1
+      - path: PashaArmature/body1_001/body1
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: PashaArmature/body1_001/nothing
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PoseLib
+      takeName: PoseLib
+      firstFrame: -1
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cubePasha
+        weight: 1
+      - path: PashaArmature
+        weight: 1
+      - path: PashaArmature/body1_001
+        weight: 1
+      - path: PashaArmature/body1_001/body1
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_L/arm2_L/arm3_L/arm4_L/arm5_L
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R
+        weight: 1
+      - path: PashaArmature/body1_001/body1/arm1_R/arm2_R/arm3_R/arm4_R/arm5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_L/backLeg1_L/backLeg2_L/backLeg3_L/backLeg4_L/backLeg5_L
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_004_R/backLeg1_R/backLeg2_R/backLeg3_R/backLeg4_R/backLeg5_R
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/Bone_005/tail5/tail4/tail3/tail2/tail1
+        weight: 1
+      - path: PashaArmature/body1_001/dorsal1/dorsal2/dorsal3/cycle
+        weight: 1
+      - path: PashaArmature/body1_001/nothing
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_001/EYElid_L
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002
+        weight: 1
+      - path: PashaArmature/body1_001/nothing/NECK/HEAD/nothing_002/EYElid_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
