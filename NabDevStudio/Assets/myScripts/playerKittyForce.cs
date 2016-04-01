@@ -14,6 +14,7 @@ public class playerKittyForce : MonoBehaviour {
     private Vector3 velo3;
     void Start()
     {
+     
         anim = gameObject.GetComponentInChildren<Animator>();
         anim.SetBool("hitanim", false);
         onGround = true;
@@ -23,7 +24,21 @@ public class playerKittyForce : MonoBehaviour {
         mybody = GetComponent<Rigidbody>();
         gameObject.GetComponent<CapsuleCollider>().height = 3.4f;
         foundBoost = GameObject.Find("JumpPower");
+        StartCoroutine("C1");
     }
+
+
+    IEnumerator C1()
+    {
+        gameObject.GetComponent<CapsuleCollider>().enabled = false;
+        mybody.useGravity = false;
+        yield return new WaitForSeconds(1);
+        gameObject.GetComponent<CapsuleCollider>().enabled = true;
+        mybody.useGravity = true;
+
+
+    }
+
     void FixedUpdate()
     {
         if (playerIsOutOfBound()) {
@@ -81,7 +96,7 @@ public class playerKittyForce : MonoBehaviour {
 
         if (transform.position.y > 12 || transform.position.y < -5) return true;
         else
-        if (transform.position.x > 18 || transform.position.x < -15) return true;
+        if (transform.position.x > 18 || transform.position.x < -20) return true;
         else
         if (transform.position.z > 2 || transform.position.z < -4) return true;
         else
@@ -94,7 +109,7 @@ public class playerKittyForce : MonoBehaviour {
         if (theCollision.gameObject.CompareTag("groundTag"))
         {
             onGround = true;
-          
+
 
         }
 
@@ -103,12 +118,21 @@ public class playerKittyForce : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+
+        
         if (other.tag == "wallTag")
         {
             anim.SetBool("hitanim", true);
             mybody.useGravity = false;
             mybody.AddTorque(new Vector3(50, 50, -500));
             mybody.velocity = new Vector3(-10, 10, 0);
+
+        }
+        else
+        if (other.tag == "starTag")
+        {
+            GameManager.managerLives++;
+            Destroy(other.gameObject);
 
         }
     }

@@ -12,13 +12,20 @@ public class GameManager : MonoBehaviour {
     GameObject UiGO;
     uimanager uiscript;
 
+
+    GameObject starmaker;
+    starSpawn starSpawnscript;
+    GameObject localStar;
+
     public static GameObject player = null;
     public static GameObject localplayer;
 
     void Start()
     {
         level = 1;
-  
+        starmaker= GameObject.Find("StarSpawner");
+        starSpawnscript = starmaker.GetComponent<starSpawn>();
+
         theWallSpawner = GameObject.Find("WallSpawnr");
         UiGO = GameObject.Find("UIManager");
         uiscript = UiGO.GetComponent<uimanager>();
@@ -33,11 +40,24 @@ public class GameManager : MonoBehaviour {
 
     void Update()
     {
-        level = (mangerScore / 10) + 1;
+        level = (mangerScore / 5) + 1;
         theWallSpawner.GetComponent<spawnwalls>().CreatePrefab(level);
         uiscript.updateScore(mangerScore);
         uiscript.updateLives(managerLives);
-        
+        uiscript.updateLevel(level);
+
+
+        int rand = Random.Range(1, 1000);
+        if (rand == 25) {
+
+            string path = "stars/star";
+
+             GameObject go = Resources.Load(path) as GameObject;
+
+            localStar = Instantiate(go) as GameObject;
+        }
+
+
     }
 
     public static void managerMakePlayer() {

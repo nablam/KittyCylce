@@ -7,7 +7,7 @@ public class wallmove : MonoBehaviour {
     GameObject go;
 
 
-
+   // cubeMountain
     public int wallspeed=0;
 
     public void setSpeed(int x) {

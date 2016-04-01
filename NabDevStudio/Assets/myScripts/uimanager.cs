@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class uimanager : MonoBehaviour {
     public Text scoretext;
     public Text livesText;
- 
+    public Text levelText;
+
     void Start () {
         scoretext.text = "Score: 0";
         livesText.text = "Lives: 3";
@@ -21,5 +22,9 @@ public class uimanager : MonoBehaviour {
         livesText.text = "Lives: " + lives.ToString();
     }
 
-  
+    public void updateLevel(int level)
+    {
+        levelText.text = "Level: " + level.ToString();
+    }
+
 }
