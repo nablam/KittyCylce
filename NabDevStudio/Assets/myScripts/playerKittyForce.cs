@@ -10,11 +10,11 @@ public class playerKittyForce : MonoBehaviour {
     private float jumpPressure;
     private float minJump;
     private float maxJumpPressure;
-
+    private bool isAlive;
     private Vector3 velo3;
     void Start()
     {
-     
+        isAlive = false;
         anim = gameObject.GetComponentInChildren<Animator>();
         anim.SetBool("hitanim", false);
         onGround = true;
@@ -35,6 +35,7 @@ public class playerKittyForce : MonoBehaviour {
         yield return new WaitForSeconds(1);
         gameObject.GetComponent<CapsuleCollider>().enabled = true;
         mybody.useGravity = true;
+        isAlive = true;
 
 
     }
@@ -120,7 +121,7 @@ public class playerKittyForce : MonoBehaviour {
     {
 
         
-        if (other.tag == "wallTag")
+        if (other.tag == "wallTag" && isAlive)
         {
             anim.SetBool("hitanim", true);
             mybody.useGravity = false;
@@ -129,7 +130,7 @@ public class playerKittyForce : MonoBehaviour {
 
         }
         else
-        if (other.tag == "starTag")
+        if (other.tag == "starTag" && isAlive)
         {
             GameManager.managerLives++;
             Destroy(other.gameObject);
