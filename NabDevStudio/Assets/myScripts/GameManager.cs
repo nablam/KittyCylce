@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour {
 
-    public int level;
-    public static int managerLives=3;
+    public static int level;
+    public static int managerLives=9;
     public static int mangerScore = 0;
 
     public GameObject theWallSpawner;
@@ -22,8 +24,10 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
+        managerLives = 9;
         level = 1;
-        starmaker= GameObject.Find("StarSpawner");
+        mangerScore = 0;
+        starmaker = GameObject.Find("StarSpawner");
         starSpawnscript = starmaker.GetComponent<starSpawn>();
 
         theWallSpawner = GameObject.Find("WallSpawnr");
@@ -40,6 +44,10 @@ public class GameManager : MonoBehaviour {
 
     void Update()
     {
+
+        if (managerLives <= 0) {
+            gameover();
+        }
         level = (mangerScore / 5) + 1;
         theWallSpawner.GetComponent<spawnwalls>().CreatePrefab(level);
         uiscript.updateScore(mangerScore);
@@ -65,6 +73,12 @@ public class GameManager : MonoBehaviour {
         player = Resources.Load(path) as GameObject;
 
         localplayer = Instantiate(player);
+    }
+
+    public void gameover() {
+
+        PlayerPrefs.SetInt("PlayerScore", mangerScore);  // 
+        SceneManager.LoadScene("GameOver");
     }
    
 

@@ -26,7 +26,11 @@ public class TreeMaker : MonoBehaviour {
 
     void MakeTree()
     {
-        GameObject go = Instantiate(tree, transform.position, transform.rotation) as GameObject;
+       
+        int speed = GameManager.level;
+
+            GameObject go = Instantiate(tree, transform.position, transform.rotation) as GameObject;
+        go.GetComponent<Treescript>().setSpeed(speed +2);
         int randZ = Random.RandomRange(10, 90);
         
        

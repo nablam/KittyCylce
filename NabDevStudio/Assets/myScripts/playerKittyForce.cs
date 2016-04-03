@@ -12,8 +12,10 @@ public class playerKittyForce : MonoBehaviour {
     private float maxJumpPressure;
     private bool isAlive;
     private Vector3 velo3;
+    private float startTime;
     void Start()
     {
+        startTime = Time.time;
         isAlive = false;
         anim = gameObject.GetComponentInChildren<Animator>();
         anim.SetBool("hitanim", false);
@@ -25,6 +27,8 @@ public class playerKittyForce : MonoBehaviour {
         gameObject.GetComponent<CapsuleCollider>().height = 3.4f;
         foundBoost = GameObject.Find("JumpPower");
         StartCoroutine("C1");
+
+       
     }
 
 
@@ -39,6 +43,8 @@ public class playerKittyForce : MonoBehaviour {
 
 
     }
+
+    private float timepressed = 0f;
 
     void FixedUpdate()
     {
@@ -58,12 +64,19 @@ public class playerKittyForce : MonoBehaviour {
             gameObject.GetComponent<CapsuleCollider>().height = 3.4f;
         anim.SetFloat("apexparam", velo3.y);
 
- 
+        // clicketyclick();
+        oldjump();
+    }
+
+    void oldjump()
+    {
 
         if (onGround)
         {
             if (CrossPlatformInputManager.GetButton("Jump"))
             {
+
+
                 if (jumpPressure < maxJumpPressure)
                 {
                     jumpPressure += Time.deltaTime * 10f;
@@ -72,7 +85,7 @@ public class playerKittyForce : MonoBehaviour {
                 {
                     jumpPressure = maxJumpPressure;
                 }
-                //print(jumpPressure);
+
             }
             else
             {
@@ -85,12 +98,53 @@ public class playerKittyForce : MonoBehaviour {
                     anim.SetInteger("jumpint", 1);
                 }
             }
-       
 
-                foundBoost.transform.localScale = new Vector3(0.5f, jumpPressure*1.5f, 0.5f);
+
+
+            foundBoost.transform.localScale = new Vector3(0.5f, jumpPressure * 1.5f, 0.5f);
+        }
+
+    }
+    void clicketyclick() {
+
+        float x = timepressed;//(Time.time);
+        float s = Mathf.Cos(x);
+        float a = Mathf.Abs(s);
+      //  Debug.Log(startTime);
+        float movingtime = Time.time;
+        if (onGround)
+        {
+            if (CrossPlatformInputManager.GetButton("Jump"))
+            {
+
+                timepressed = movingtime - startTime;
+                if (jumpPressure < maxJumpPressure)
+                {
+                    jumpPressure += Time.deltaTime * 10f;
+                }
+                else
+                {
+                    jumpPressure = maxJumpPressure;
+                }
+
+            }
+            else
+            {
+                if (jumpPressure > 0)
+                {
+                    jumpPressure = jumpPressure + minJump;
+                    mybody.velocity = new Vector3(0, jumpPressure * a, 0);
+                    jumpPressure = 0;
+                    onGround = false;
+                    anim.SetInteger("jumpint", 1);
+                }
+            }
+
+        //    print("time cur=" + movingtime + "  timepress=" + timepressed);
+
+            foundBoost.transform.localScale = new Vector3(0.5f, jumpPressure * 1.5f * a, 0.5f);
         }
     }
-
 
     bool playerIsOutOfBound( )
     {
@@ -142,43 +196,6 @@ public class playerKittyForce : MonoBehaviour {
 
     #region old
 
-    /*
 
-
-    
-    enum State { Alive, Dead,  Invincible , Playing }
-    private State Playerstate;
-
-    private float blinkRate = .1f;
-    private int numberOfTimeToBlink = 12;
-    private int blinkCount;
-
-
-    public int TotalLives;
-    private SkinnedMeshRenderer pashacubeSkinMesh;
-    void Start()
-    {
-        Playerstate = State.Playing;
-        TotalLives = 3;
-
-
-        pashacubeSkinMesh = this.transform.GetChild(1).GetComponentInChildren<SkinnedMeshRenderer>();
-    }
-
-    public Vector3 FrameVelocity { get; set; }
-    public Vector3 PrevPosition { get; set; }
-    void Update()
-    { 
-   
-
-      
-    }
- 
-
-    public Vector3 myposition() {
-        return this.transform.position;
-    }
-
-*/
     #endregion old
 }

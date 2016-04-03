@@ -7,14 +7,22 @@ public class Treescript : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        speed = 5;
+  
     }
-    public int speed;
+  
+    public int treespeed = 0;
+
+    public void setSpeed(int x)
+    {
+        treespeed = x;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * speed, Space.World);
+
+        int globalspeed=GameManager.level+2;
+        transform.Translate(Vector3.left * Time.deltaTime * globalspeed, Space.World);
 
         if (this.transform.position.x < -200)
         {

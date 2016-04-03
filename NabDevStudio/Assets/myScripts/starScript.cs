@@ -14,7 +14,8 @@ public class starScript : MonoBehaviour {
 	
 	}
 	void Update () {
-        transform.Translate(Vector3.left * Time.deltaTime * starspeed, Space.World);
+        int globalspeed = GameManager.level + 1;
+        transform.Translate(Vector3.left * Time.deltaTime * globalspeed, Space.World);
         if (this.transform.position.x < -15)
         {
             Destroy(this.gameObject);
