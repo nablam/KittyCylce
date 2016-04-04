@@ -24,7 +24,7 @@ public class wallmove : MonoBehaviour {
         transform.Translate(Vector3.left  * Time.deltaTime * wallspeed, Space.World);
        
         if (this.transform.position.x < -12) {
-            GameManager.mangerScore++;
+            GameManager.managerWallNumber++;
             Destroy(this.gameObject);
         }
          

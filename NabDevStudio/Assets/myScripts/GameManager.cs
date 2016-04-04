@@ -8,8 +8,11 @@ public class GameManager : MonoBehaviour {
     public static int level;
     public static int managerLives=9;
     public static int mangerScore = 0;
+    public static int managerWallNumber = 0;
 
     public GameObject theWallSpawner;
+    public GameObject musicobject;
+    private AudioSource audio;
 
     GameObject UiGO;
     uimanager uiscript;
@@ -24,6 +27,13 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
+        audio = musicobject.GetComponent<AudioSource>();
+        int onoff=PlayerPrefs.GetInt("SoundOnOff");
+        if (onoff == 1) { audio.enabled = true; }
+        else
+            if (onoff == 0) { audio.enabled = false; }
+
+        managerWallNumber = 0;
         managerLives = 9;
         level = 1;
         mangerScore = 0;
@@ -48,7 +58,7 @@ public class GameManager : MonoBehaviour {
         if (managerLives <= 0) {
             gameover();
         }
-        level = (mangerScore / 5) + 1;
+        level = (managerWallNumber / 5) + 1;
         theWallSpawner.GetComponent<spawnwalls>().CreatePrefab(level);
         uiscript.updateScore(mangerScore);
         uiscript.updateLives(managerLives);

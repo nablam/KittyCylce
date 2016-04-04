@@ -24,6 +24,12 @@ public class spawnwalls : MonoBehaviour {
 
    public void CreatePrefab(int level)
     {
+
+        float y;
+  
+            y = 5 + (1 / (0.01f * (level + 10)));
+      
+       // int yint = (int)y;
         InstantiationTimer -= Time.deltaTime;
         if (InstantiationTimer <= 0)
         {
@@ -32,7 +38,7 @@ public class spawnwalls : MonoBehaviour {
 
           Instantiate(makeWallwithspeed(randwall, level));
       
-          float newtimer = Random.Range(6, 12);
+          float newtimer = Random.Range(4f, y);
             
             InstantiationTimer = newtimer;
         }

@@ -26,9 +26,7 @@ public class playerKittyForce : MonoBehaviour {
         mybody = GetComponent<Rigidbody>();
         gameObject.GetComponent<CapsuleCollider>().height = 3.4f;
         foundBoost = GameObject.Find("JumpPower");
-        StartCoroutine("C1");
-
-       
+        StartCoroutine("C1");  
     }
 
 
@@ -188,7 +186,12 @@ public class playerKittyForce : MonoBehaviour {
         {
             GameManager.managerLives++;
             Destroy(other.gameObject);
-
+        }
+        else
+        if (other.tag == "pawTag" && isAlive)
+        {
+            GameManager.mangerScore++;
+            Destroy(other.gameObject);
         }
     }
 
