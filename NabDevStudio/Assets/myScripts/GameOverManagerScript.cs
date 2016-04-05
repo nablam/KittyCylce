@@ -7,12 +7,20 @@ public class GameOverManagerScript : MonoBehaviour {
 
 
     public Text scoretext;
-    // Use this for initialization
-    void Start () {
+    public Text Maxscoretext;
 
-        int INTscore = PlayerPrefs.GetInt("PlayerScore");
-        string s = INTscore.ToString();
-        scoretext.text = s;
+
+    private int lastLevelScore;
+    private int maxscore;
+    void Start () {
+        lastLevelScore = PlayerPrefs.GetInt("CurentSessionScore");
+        maxscore = PlayerPrefs.GetInt("MaxScore");
+
+        if (lastLevelScore > maxscore) { maxscore = lastLevelScore; PlayerPrefs.SetInt("MaxScore", maxscore); }
+
+        scoretext.text ="Last session score="+ lastLevelScore.ToString();
+
+      Maxscoretext.text = "All times top score ="+maxscore.ToString();
     }
 
     //GameOverButton
@@ -21,9 +29,7 @@ public class GameOverManagerScript : MonoBehaviour {
     void Update () {
         if (CrossPlatformInputManager.GetButtonDown("GameOverButton"))
         {
-           
-            SceneManager.LoadScene("GameManager");
-            //Application.LoadLevel("HighScore");
+            SceneManager.LoadScene("GameManager");        
         }
 
     }

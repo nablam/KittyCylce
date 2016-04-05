@@ -1,0 +1,13 @@
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_obj\Debug\NabDevStudio.CSharp.Plugins.csprojResolveAssemblyReference.cache
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.dll
+C:\_myMainDir\UnityAndroid\Git_Unity_Android\NabDevStudio\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.pdb

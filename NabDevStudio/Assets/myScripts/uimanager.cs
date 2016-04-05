@@ -6,10 +6,12 @@ public class uimanager : MonoBehaviour {
     public Text scoretext;
     public Text livesText;
     public Text levelText;
+   public Text Maxscore;
 
     void Start () {
         scoretext.text = "Score: 0";
         livesText.text = "Lives: 3";
+        Maxscore.text="Top score="+ PlayerPrefs.GetInt("MaxScore").ToString();
     }
 
     public void updateScore(int score) {

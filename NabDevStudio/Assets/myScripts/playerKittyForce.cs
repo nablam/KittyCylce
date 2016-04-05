@@ -13,8 +13,17 @@ public class playerKittyForce : MonoBehaviour {
     private bool isAlive;
     private Vector3 velo3;
     private float startTime;
+
+    private GameObject pawplosion;
+
+
+        
     void Start()
     {
+
+        string path = "particles/pawplosion";
+
+        pawplosion = Resources.Load(path) as GameObject;
         startTime = Time.time;
         isAlive = false;
         anim = gameObject.GetComponentInChildren<Animator>();
@@ -191,6 +200,7 @@ public class playerKittyForce : MonoBehaviour {
         if (other.tag == "pawTag" && isAlive)
         {
             GameManager.mangerScore++;
+            Instantiate(pawplosion, other.transform.position, Quaternion.identity);
             Destroy(other.gameObject);
         }
     }
